@@ -20,7 +20,8 @@ public class Win {
                 break;
             }
         }
-        return result;    }
+        return result;
+    }
 
     public static boolean check(int[][] board) {
         boolean rsl = false;
