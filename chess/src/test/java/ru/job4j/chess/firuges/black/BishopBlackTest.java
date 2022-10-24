@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 import ru.job4j.chess.firuges.Cell;
 import ru.job4j.chess.firuges.Figure;
 
+import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
 
 class BishopBlackTest {
@@ -26,7 +27,6 @@ class BishopBlackTest {
     void whenWay() {
         BishopBlack bb = new BishopBlack(Cell.C1);
         Cell[] arr = {Cell.D2, Cell.E3, Cell.F4, Cell.G5};
-        assertEquals(bb.way(Cell.G5), arr);
-
+        assertThat(bb.way(Cell.G5)).isEqualTo(arr);
     }
 }
